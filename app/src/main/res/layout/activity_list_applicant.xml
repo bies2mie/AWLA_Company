@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/adaptergreystroke"
+            android:paddingBottom="10dp"
+            android:text="Applicants List"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/closejob"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/buttoncornerredgrad2"
+            android:layout_height="wrap_content"
+            android:text="Close Job" />
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/imageViewGone"
+        android:layout_marginTop="150dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:src="@drawable/ic_employee" />
+
+    <TextView
+        android:id="@+id/textViewGone"
+        android:textColor="#b30000"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold|italic"
+        android:visibility="gone"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:text="No new job interview available" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:id="@+id/recylcerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>

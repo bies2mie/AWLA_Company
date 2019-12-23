@@ -35,7 +35,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="vertical" >
 
                 <LinearLayout
@@ -54,7 +54,7 @@
 
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Applicant Name"
+                            android:text="Name"
                             android:textStyle="bold" />
 
                         <TextView
@@ -105,7 +105,7 @@
 
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Applicant Email"
+                            android:text="Email"
                             android:textStyle="bold" />
 
                         <TextView
@@ -137,7 +137,7 @@
                             android:textStyle="bold" />
 
                         <TextView
-                            android:id="@+id/applystatus"
+                            android:id="@+id/applystatus_a"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="TextView" />
@@ -161,10 +161,11 @@
                 </LinearLayout>
 
                 <VideoView
-                    android:layout_marginTop="10dp"
                     android:id="@+id/applivideoView"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="450dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp" />
 
                 <Button
                     android:id="@+id/approveiv"

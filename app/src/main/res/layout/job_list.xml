@@ -46,14 +46,14 @@
                     android:src="@drawable/ic_pickupaddress" />
 
                 <TextView
-                    android:id="@+id/companyName"
+                    android:id="@+id/jobCat"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:fontFamily="@font/sofiamediumpro"
                     android:layout_weight="2"
                     android:layout_gravity="center"
-                    android:text="Company Name"
+                    android:text="Job Category"
                     android:textSize="15dp"
                     android:textColor="#909090"
                     />

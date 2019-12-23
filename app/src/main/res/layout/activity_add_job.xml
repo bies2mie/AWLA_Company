@@ -1,9 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddJob">
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Job"
+                android:textColor="@color/colorBlack"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/jobPos"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:padding="15dp"
+                android:background="@drawable/textboxcornerblack"
+                android:hint="Job Position"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/jobDetail"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:padding="15dp"
+                android:isScrollContainer="true"
+                android:minHeight="150dp"
+                android:background="@drawable/textboxcornerblack"
+                android:hint="Job Details"
+                android:inputType="text|textMultiLine" />
+
+            <TextView
+
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Job Category" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/textboxcornerblack"
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/chooseOpenDate"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:padding="15dp"
+                android:background="@drawable/textboxcornerblack"
+                android:hint="Choose Job Open Date"
+                android:inputType="date" />
+
+            <EditText
+                android:id="@+id/chooseCloseDate"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:padding="15dp"
+                android:background="@drawable/textboxcornerblack"
+                android:hint="Choose Job Close Date"
+                android:inputType="date" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/addJobBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/buttoncornerblack"
+            android:text="Add Job" />
+    </LinearLayout>
+
+</LinearLayout>
